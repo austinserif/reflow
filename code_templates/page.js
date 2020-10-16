@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/COMPONENT_NAME.css';
 
-/** Component Documentation Here */
+/** Page Documentation Here */
 const COMPONENT_NAME = (props) => {
     return (
         <div className='COMPONENT_NAME'>

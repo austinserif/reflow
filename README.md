@@ -15,13 +15,16 @@ src
 	...
 ```
 
+### Quick Start
+
+To generate a new page or component, navigate to the root directory or your react app and execute one of following:
+
+1. Components: `/path/to/reflow/make-react component Nav Routes`
+
+2. Pages `/path/to/reflow/make-react page Home About`
+
 ### Coming Soon
 
-1. Components
-	- To generate component files and styles for COMPONENT_NAME, fork the files locally and execute `make_component COMPONENT_NAME` from the root of your react project directory.
-
-2. Pages
-
-3. Hoooks
+3. Hooks
 
 4. Reducers

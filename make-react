@@ -1,0 +1,25 @@
+#!/bin/bash
+
+if [ "$1" == "component" ] || [ "$1" == "page" ]; then
+
+    #make directories if not in existence
+    mkdir -p src/components src/pages src/styles src/__tests__ src/hooks
+
+    #loop from all args ignoring the first
+    for i in "${@:2}"; 
+
+    do
+        
+        touch src/$1s/$i.js
+        touch src/styles/$i.css
+        touch src/__tests__/$i.test.js;
+        
+        sed -e "s/COMPONENT_NAME/$i/g" ~/Desktop/reflow/code_templates/$1.js > src/$1s/$i.js
+        sed -e "s/COMPONENT_NAME/$i/g" ~/Desktop/reflow/code_templates/component.css > src/styles/$i.css;
+    done
+
+else
+
+    echo "First argument must be either 'page' or 'component', followed by name of component or page you wish to generate"
+
+fi
